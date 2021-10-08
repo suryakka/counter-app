@@ -16,7 +16,7 @@ void main() {
     blocTest('Increment map event to state test',
         build: () async => counterBloc,
         act: (bloc) => bloc.add(Increment(1)),
-        expect: [CounterLoaded(1)]);
+        expect: [CounterLoaded(2)]);
     blocTest('Decrement map event to state test',
         build: () async => counterBloc,
         act: (bloc) => bloc.add(Decrement(1)),
