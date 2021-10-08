@@ -20,6 +20,10 @@ void main() {
     blocTest('Decrement map event to state test',
         build: () async => counterBloc,
         act: (bloc) => bloc.add(Decrement(1)),
-        expect: [CounterLoaded(1)]);
+        expect: [CounterLoaded(0)]);
+    blocTest('Reset map event to state test',
+        build: () async => counterBloc,
+        act: (bloc) => bloc.add(Reset()),
+        expect: [CounterLoaded(0)]);
   });
 }
