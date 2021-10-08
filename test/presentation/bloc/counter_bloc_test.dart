@@ -25,5 +25,9 @@ void main() {
         build: () async => counterBloc,
         act: (bloc) => bloc.add(Reset()),
         expect: [CounterLoaded(0)]);
+    blocTest('Input map event to state test',
+        build: () async => counterBloc,
+        act: (bloc) => bloc.add(Input(2)),
+        expect: [CounterLoaded(2)]);
   });
 }
