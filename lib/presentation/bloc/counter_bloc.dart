@@ -40,5 +40,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
     yield CounterLoaded(0);
   }
 
-  Stream<CounterState> _mapInputToState(Input event) async* {}
+  Stream<CounterState> _mapInputToState(Input event) async* {
+    yield CounterLoaded(event.input);
+  }
 }
