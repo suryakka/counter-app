@@ -1,9 +1,11 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:injectable/injectable.dart';
 
 part 'counter_event.dart';
 part 'counter_state.dart';
 
+@injectable
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
   @override
   CounterState get initialState => CounterInitial();
@@ -26,8 +28,14 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
     }
   }
 
-  _mapIncrementToState(CounterEvent event) {}
-  _mapDecrementToState(CounterEvent event) {}
-  _mapResettToState(CounterEvent event) {}
-  _mapInputToState(CounterEvent event) {}
+  Stream<CounterState> _mapIncrementToState(Increment event) async* {
+    yield CounterLoaded(event.input + 1);
+  }
+
+  Stream<CounterState> _mapDecrementToState(Decrement event) async* {
+    yield CounterLoaded(event.input - 1);
+  }
+
+  Stream<CounterState> _mapResettToState(Reset event) async* {}
+  Stream<CounterState> _mapInputToState(Input event) async* {}
 }
