@@ -1,16 +1,15 @@
-# counter_app
+# Counter App
 
-A new Flutter project.
+## _Pre requisites_
+[![GitHub last commit](https://img.shields.io/github/last-commit/suryakka/counter-app?logo=github)](https://github.com/suryakka/counter-app/commits/main) [![GitHub top language](https://img.shields.io/github/languages/top/suryakka/counter-app?label=Dart&logo=Dart)](https://img.shields.io/github/languages/top/suryakka/counter-app?label=Dart&logo=Dart) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/suryakka/counter-app?logo=github&color=teal)](https://img.shields.io/github/languages/code-size/suryakka/counter-app?logo=github&color=teal) [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/suryakka/counter-app/master?logo=codefactor&logoColor=white)
+](https://img.shields.io/codefactor/grade/github/suryakka/counter-app/master?logo=codefactor&logoColor=white)
+The source code for this project is written using [Flutter](https://flutter.dev/). Make sure you have [Flutter](https://flutter.dev/) installed on your computer before running this application, **how to install and running Flutter you can click [here](https://nodejs.org/en/download/)**.
 
-## Getting Started
+## _How to run?_
 
-This project is a starting point for a Flutter application.
+This is a console application written in `Node.js`. This can be run in two modes:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Make sure you have installed Flutter and another requirement.
+- run `flutter pub get` in terminal
+- then run `flutter run`
+- for build to android apk you can run `flutter build apk --release`
