@@ -3,6 +3,7 @@
 ## _Pre requisites_
 [![GitHub last commit](https://img.shields.io/github/last-commit/suryakka/counter-app?logo=github)](https://github.com/suryakka/counter-app/commits/main) [![GitHub top language](https://img.shields.io/github/languages/top/suryakka/counter-app?label=Dart&logo=Dart)](https://img.shields.io/github/languages/top/suryakka/counter-app?label=Dart&logo=Dart) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/suryakka/counter-app?logo=github&color=teal)](https://img.shields.io/github/languages/code-size/suryakka/counter-app?logo=github&color=teal) [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/suryakka/counter-app/master?logo=codefactor&logoColor=white)
 ](https://img.shields.io/codefactor/grade/github/suryakka/counter-app/master?logo=codefactor&logoColor=white)
+
 The source code for this project is written using [Flutter](https://flutter.dev/). Make sure you have [Flutter](https://flutter.dev/) installed on your computer before running this application, **how to install and running Flutter you can click [here](https://nodejs.org/en/download/)**.
 
 ## _How to run?_
